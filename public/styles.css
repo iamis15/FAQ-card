@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  height: 100vh;
+  font-size: 12px;
+}
+
+hr {
+  opacity: 0.5;
+  margin-top: 1rem;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  border-radius: 1rem;
+
+  width: 980px;
+  height: 500px;
+}
+
+.illustration {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.img-overflow {
+  overflow: hidden;
+  width: 100%;
+}
+
+.img-overflow2 {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  position: relative;
+  left: -5.5rem;
+}
+
+.box {
+  position: absolute;
+  left: -25%;
+  top: 42%;
+}
+
+.background {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  left: -42%;
+  bottom: -8%;
+}
+
+.faq {
+  padding: 2rem;
+  width: 50%;
+  height: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.faq::-webkit-scrollbar {
+  display: none;
+}
+
+.faq h1 {
+  font-size: 2rem;
+}
+
+.question {
+  font-size: 1rem;
+}
+
+.q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 0.5rem;
+}
+
+.q img {
+  width: 3%;
+  height: 3%;
+  transition: transform 0.5s ease;
+}
+
+.a {
+  transition: max-height 0.5s ease 0s;
+}
+
+@media screen and (max-width: 980px) {
+  .card {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .illustration {
+    display: none;
+  }
+
+  .faq h1 {
+    text-align: center;
+  }
+
+  .faq {
+    width: 100%;
+  }
+}
